@@ -10,3 +10,35 @@ MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf
 [91m[main 2024-10-16T20:28:03.884Z][0m Error: net::ERR_NETWORK_IO_SUSPENDED
     at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
     at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorneNlQl/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-17T07:36:36.145Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-17T07:36:36.145Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorneNlQl/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-17T07:49:59.350Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-17T07:49:59.351Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)

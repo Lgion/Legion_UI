@@ -10,8 +10,8 @@ const types = [
     "light text-dark",
     "dark",
 ]
-// , _data = {content:"okok",type:5}
-, _data = {}
+, _data = {content:"okok",type:5}
+// , _data = {}
 
 export default ({_,children,$=_data}) => {
     const {type,content,props} = $||_||children

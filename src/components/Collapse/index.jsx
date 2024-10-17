@@ -1,18 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
+import {WrapperRaw} from '../../wrappers'; // Assurez-vous que le chemin est correct
 
-export default ({ props }) => {
-  const { id, buttonText, content } = props;
+const _data = {
+  id: 'collapseExample',
+  buttonText: 'Afficher le contenu',
+  content: 'Ceci est le contenu qui sera affiché ou masqué.',
+};
+
+export default ({ _, children, $ = _data }) => {
+  const { id, buttonText, content } = $ || _ || children;
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleCollapse = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <>
-      <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target={`#${id}`} aria-expanded="false" aria-controls={id}>
+    <WrapperRaw>
+      <button 
+        className="btn btn-primary" 
+        type="button" 
+        onClick={toggleCollapse}
+        aria-expanded={isOpen} 
+        aria-controls={id}
+      >
         {buttonText}
       </button>
-      <div className="collapse" id={id}>
+      <div className={`collapse ${isOpen ? 'show' : ''}`} id={id}>
         <div className="card card-body">
           {content}
         </div>
       </div>
-    </>
+    </WrapperRaw>
   );
 };

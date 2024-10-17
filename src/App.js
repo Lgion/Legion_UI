@@ -60,6 +60,7 @@ const App = () => {
 
   return <>
     <Btn />
+    <ButtonGroup props={{buttons: buttonGroupButtons}} />
     <Accordion />
     <Alert />
     <div style={{position:"relative"}}>
@@ -111,7 +112,6 @@ const App = () => {
     <Tooltip props={{content: "Ceci est une infobulle"}}>
       <button className="btn btn-secondary">Survolez-moi</button>
     </Tooltip>
-    <ButtonGroup props={{buttons: buttonGroupButtons}} />
     <Popover props={{title: "Titre du popover", content: "Contenu du popover", placement: "right"}}>
       <button className="btn btn-danger">Cliquez pour le popover</button>
     </Popover>
