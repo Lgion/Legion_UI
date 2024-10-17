@@ -1,0 +1,12 @@
+nohup: les entrées sont ignorées
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+
+[90m[main 2024-10-16T18:13:38.804Z][0m update#setState disabled
+[90m[main 2024-10-16T18:13:38.841Z][0m update#ctor - updates are disabled as there is no update URL
+[91m[main 2024-10-16T18:13:38.970Z][0m [storage state.vscdb] error checking size of src.vs.platform.reactivestorage.browser.reactiveStorageServiceImpl.persistentStorage.workspaceUser: Error: Unexpected number of rows - 0
+[91m[main 2024-10-16T18:13:42.129Z][0m vscode-file: Refused to load resource /tmp/.mount_cursorcOBES4/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/tmp/.mount_cursorcOBES4/resources/app/extensions/theme-seti/icons/seti.woff)
+[43049:1016/211210.404086:ERROR:atom_cache.cc(229)] Add code/file-list to kAtomsToCache
+[91m[main 2024-10-16T20:28:03.882Z][0m [uncaught exception in main]: Error: net::ERR_NETWORK_IO_SUSPENDED
+[91m[main 2024-10-16T20:28:03.884Z][0m Error: net::ERR_NETWORK_IO_SUSPENDED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)

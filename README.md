@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# NomDeLaBibliothèque
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NomDeLaBibliothèque est une bibliothèque de composants React inspirée par shadcn, conçue pour produire du code HTML/CSS/JS à partir de données. Notre approche unique se concentre sur trois types de composants principaux pour offrir une flexibilité et une modularité maximales.
 
-## Available Scripts
+## Caractéristiques principales
 
-In the project directory, you can run:
+- **Génération de code** : Produit du HTML, CSS et JavaScript à partir de données.
+- **Architecture modulaire** : Trois types de composants pour une flexibilité maximale.
+- **Personnalisable** : Adaptez facilement les composants à vos besoins spécifiques.
 
-### `npm start`
+## Types de composants
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Wrappers
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Les Wrappers sont des composants conteneurs qui fournissent un contexte ou une structure pour d'autres composants. Ils peuvent gérer la mise en page, les styles globaux ou le comportement partagé.
 
-### `npm test`
+Exemple d'utilisation :
+jsx
+```jsx
+<Wrapper>
+{/ Autres composants ici /}
+</Wrapper>
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Composants Fragment
 
-### `npm run build`
+Ces composants s'intègrent dans les Wrappers et n'ont pas de parent direct dans le DOM. Ils sont parfaits pour regrouper des éléments logiquement liés sans ajouter de nœud supplémentaire au DOM.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Exemple d'utilisation :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```jsx
+<Wrapper>
+    <ComposantFragment>
+    {/ Éléments ou autres composants ici /}
+    </ComposantFragment>
+</Wrapper>
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Éléments
 
-### `npm run eject`
+Les Éléments correspondent principalement aux balises HTML5 classiques, mais avec des comportements et des fonctionnalités augmentés. Ils forment les blocs de construction de base de votre interface utilisateur.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Exemple d'utilisation :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+``` jsx
+<Wrapper>
+    <ComposantFragment>
+        <Bouton onClick={handleClick}>Cliquez-moi</Bouton>
+        <Input type="text" placeholder="Entrez du texte" />
+    </ComposantFragment>
+</Wrapper>
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+``` bash
+npm install nom-de-la-bibliotheque
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Utilisation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+``` jsx
+import { Wrapper, ComposantFragment, Bouton } from 'nom-de-la-bibliotheque';
+function MonComposant() {
+    return (
+    <Wrapper>
+        <ComposantFragment>
+            <Bouton>Cliquez-moi</Bouton>
+        </ComposantFragment>
+    </Wrapper>
+    );
+}
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Documentation
 
-### Analyzing the Bundle Size
+Pour plus d'informations sur l'utilisation de NomDeLaBibliothèque, veuillez consulter notre [documentation complète](lien-vers-la-documentation).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contribution
 
-### Making a Progressive Web App
+Nous accueillons favorablement les contributions à NomDeLaBibliothèque ! Veuillez consulter notre [guide de contribution](lien-vers-le-guide-de-contribution) pour plus d'informations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Licence
 
-### Advanced Configuration
+NomDeLaBibliothèque est sous licence [MIT](lien-vers-la-licence).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
